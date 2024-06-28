@@ -1,5 +1,5 @@
 {
-  "name": "vnt",
+  "name": "vni",
   "displayName": "VNI Text File",
   "description": "Syntax highlighting for VNI Text files",
   "version": "0.0.1",
@@ -11,15 +11,22 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "vnt",
-      "aliases": ["VNI-t", "vnt"],
-      "extensions": [".vnt"],
+      "id": "vni",
+      "aliases": ["VNI-t", "vni"],
+      "extensions": [".vni"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "vnt",
-      "scopeName": "source.vnt",
-      "path": "./syntaxes/vnt.tmLanguage.json"
-    }]
+      "language": "vni",
+      "scopeName": "source.vni",
+      "path": "./syntaxes/vni.tmLanguage.json"
+    }],
+    "iconThemes": [
+      {
+        "id": "hive",
+        "label": "Hive",
+        "path": "./resoures/icon.png"
+      }
+    ]
   }
 }

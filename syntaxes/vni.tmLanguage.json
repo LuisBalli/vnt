@@ -30,39 +30,39 @@
 	"repository": {
 		"logic-lines":{
 			"patterns": [{
-				"name": "keyword.control.vnt",
-				"match": "\\b(model|if|else|choice|input)\\b"
+				"name": "keyword.control.vni",
+				"match": "\\b(modal|if|else|choice|input)\\b"
 			}]
 		},
 		"commands":{
 			"patterns": [{
-				"name": "entity.name.function.vnt",
-				"match": "\\b(CreateCharacter|Highlight|Unhighlight|Wait|Show|Hide|MoveCharacter|Move|AddEvent|UnLockQuest|HideHud|ShowDS|ClearLogs|HideVNL|SetLayerMedia|ClearLayerMedia|EraseAllCharacter|ClearDS|ShowHud)\\b"
+				"name": "entity.name.function.vni",
+				"match": "\\b(UnLockZone|HideDS|ShowQuest|Load|FinishQuest|HideQuest|ShowObjetive|RemoveEvent|ShowVNL|SetSprite|SetPriority|ShowCDS|CreateCharacter|Highlight|Unhighlight|Wait|Show|Hide|MoveCharacter|Move|AddEvent|UnLockQuest|HideHud|ShowDS|ClearLogs|HideVNL|SetLayerMedia|ClearLayerMedia|EraseAllCharacter|ClearDS|ShowHud)\\b"
 			}]
 		},
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.operator.vnt",
+				"name": "keyword.operator.vni",
 				"match": "\\b(at|as)\\b"
 			}]
 		},
 		"dialogues": {
-			"name": "string.quoted.double.vnt",
+			"name": "string.quoted.double.vni",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.vnt",
+					"name": "constant.character.vni",
 					"begin": "{",
 					"end": "}"
 				}
 			]
 		},	
 		"tags": {
-			"name": "entity.name.tag.vnt",
+			"name": "entity.name.tag.vni",
 			"begin": "<",
 			"end": ">"
 		}
 	},
-	"scopeName": "source.vnt"
+	"scopeName": "source.vni"
 }
