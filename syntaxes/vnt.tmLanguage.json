@@ -1,0 +1,68 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "VNI Dialogue Texts Files",
+	"patterns": [
+		{
+			"include": "#speaker"
+		},
+		{
+			"include": "#commands"
+		},
+		{
+			"include": "#dialogues"
+		},
+		{
+			"include": "#logic-lines"
+		},
+		{
+			"include": "#operator"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#params"
+		},
+		{
+			"include": "#tags"
+		}
+	],
+	"repository": {
+		"logic-lines":{
+			"patterns": [{
+				"name": "keyword.control.vnt",
+				"match": "\\b(model|if|else|choice|input)\\b"
+			}]
+		},
+		"commands":{
+			"patterns": [{
+				"name": "entity.name.function.vnt",
+				"match": "\\b(CreateCharacter|Highlight|Unhighlight|Wait|Show|Hide|MoveCharacter|Move|AddEvent|UnLockQuest|HideHud|ShowDS|ClearLogs|HideVNL|SetLayerMedia|ClearLayerMedia|EraseAllCharacter|ClearDS|ShowHud)\\b"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.operator.vnt",
+				"match": "\\b(at|as)\\b"
+			}]
+		},
+		"dialogues": {
+			"name": "string.quoted.double.vnt",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.vnt",
+					"begin": "{",
+					"end": "}"
+				}
+			]
+		},	
+		"tags": {
+			"name": "entity.name.tag.vnt",
+			"begin": "<",
+			"end": ">"
+		}
+	},
+	"scopeName": "source.vnt"
+}

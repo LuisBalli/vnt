@@ -1,0 +1,25 @@
+{
+  "name": "vnt",
+  "displayName": "VNI Text File",
+  "description": "Syntax highlighting for VNI Text files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "vnt",
+      "aliases": ["VNI-t", "vnt"],
+      "extensions": [".vnt"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "vnt",
+      "scopeName": "source.vnt",
+      "path": "./syntaxes/vnt.tmLanguage.json"
+    }]
+  }
+}
